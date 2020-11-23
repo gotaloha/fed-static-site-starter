@@ -26,7 +26,8 @@
     "gulp:dev": "gulp --silent || exit 0",
     "gulp:build": "cross-env NODE_ENV=production gulp build || exit 0",
     "fix-css": "stylelint \"src/**/*.{css,scss}\" --fix || exit 0",
-    "fix-js": "eslint \"src/**/*.js\" --fix || exit 0"
+    "fix-js": "eslint \"src/**/*.js\" --fix || exit 0",
+    "deploy": "node deploy"
   },
   "dependencies": {},
   "devDependencies": {
@@ -48,6 +49,7 @@
     "eslint-plugin-node": "^11.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
+    "ftp-deploy": "^2.3.7",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-eslint": "^6.0.0",
