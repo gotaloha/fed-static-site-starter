@@ -30,6 +30,11 @@ Uses [BrowserSync](http://browsersync.io) to synchronize clicks, scrolls, forms 
 - Build for production: `npm run build`
 - Remove the `dist` folder: `npm run clean`
 
+### Setting up Deploy to FTP
+- First open `.gitignore` and after node_modules add a new line and then add `deploy.js`
+- Commit, stage, and push this file to git
+- In a terminal, execute: `git rm --cached deploy.js`
+
 ### Quick start guides:
 - [Documentation](docs/README.md)
 - [Eleventy](https://www.11ty.dev/docs/)
