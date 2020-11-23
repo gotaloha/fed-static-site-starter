@@ -31,9 +31,14 @@ Uses [BrowserSync](http://browsersync.io) to synchronize clicks, scrolls, forms 
 - Remove the `dist` folder: `npm run clean`
 
 ### Setting up Deploy to FTP
-- First open `.gitignore` and after node_modules add a new line and then add `deploy.js`
-- Commit, stage, and push this file to git
-- In a terminal, execute: `git rm --cached deploy.js`
+**Be certain to follow steps 1-4 or you risk exposing your FTP credentials to the public!**
+
+1. First open `.gitignore` located at the root of this repo
+2. After `node_modules` add a new line and then add `deploy.js`
+3. Commit, stage, and push this file to git
+4. In a terminal, execute: `git rm --cached deploy.js`
+5. Open `deploy.js` and follow the comments to add your personal FTP credentials
+6. In a terminal, execute the following command to deploy `npm run deploy`
 
 ### Quick start guides:
 - [Documentation](docs/README.md)
