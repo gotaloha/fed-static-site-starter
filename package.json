@@ -4,15 +4,15 @@
   "private": true,
   "description": "Gulp Starter Kit for front-end developers.",
   "bugs": {
-    "url": "https://github.com/nstungcom/gulp-starter-kit/issues",
-    "email": "hi@nstung.com"
+    "url": "https://github.com/gotaloha/fed-static-site-starter/issues",
+    "email": "erik@gotaloha.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nstungcom/gulp-starter-kit.git"
+    "url": "https://github.com/gotaloha/fed-static-site-starter.git"
   },
   "license": "MIT",
-  "author": "Son Tung Ngo <hi@nstung.com>",
+  "author": "Erik Olson <erik@gotaloha.com>",
   "main": "gulpfile.babel.js",
   "engines": {
     "node": ">=8"
