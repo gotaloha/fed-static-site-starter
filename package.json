@@ -29,7 +29,9 @@
     "fix-js": "eslint \"src/**/*.js\" --fix || exit 0",
     "deploy": "node deploy"
   },
-  "dependencies": {},
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-plugin-rss": "^1.0.7",

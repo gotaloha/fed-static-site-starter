@@ -6,7 +6,7 @@
     <title>{%- if title -%}{{ title }} - {{ site.title }}{%- else -%}{{ site.title }}{%- endif -%}</title>
 
     {% include "meta.html" ignore missing%}
-
+    <script src="/assets/js/jquery.min.js"></script>
     <link rel="stylesheet" href="/assets/css/app.css">
   </head>
   <body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
