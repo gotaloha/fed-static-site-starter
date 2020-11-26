@@ -17,20 +17,32 @@ body {
   height: 100vh;
 }
 
-h1 {
-  font-weight: 300;
-  font-size: 45px;
-  line-height: 45px;
-  margin: 0 0 15px;
-  padding: 0;
-}
-
-p {
-  color: #aaa;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  margin: 0 0 15px;
-  padding: 0;
-  letter-spacing: .15em;
+.component {
+  &-hero {
+    &-basic {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      
+      h1 {
+        font-weight: 300;
+        font-size: 45px;
+        line-height: 45px;
+        margin: 0 0 15px;
+        padding: 0;
+      }
+      
+      p {
+        color: #aaa;
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        margin: 0 0 15px;
+        padding: 0;
+        letter-spacing: .15em;
+      }
+      
+    }
+  }
 }
