@@ -4,15 +4,15 @@
   "private": true,
   "description": "Gulp Starter Kit for front-end developers.",
   "bugs": {
-    "url": "https://github.com/nstungcom/gulp-starter-kit/issues",
-    "email": "hi@nstung.com"
+    "url": "https://github.com/gotaloha/fed-static-site-starter/issues",
+    "email": "erik@gotaloha.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nstungcom/gulp-starter-kit.git"
+    "url": "https://github.com/gotaloha/fed-static-site-starter.git"
   },
   "license": "MIT",
-  "author": "Son Tung Ngo <hi@nstung.com>",
+  "author": "Erik Olson <erik@gotaloha.com>",
   "main": "gulpfile.babel.js",
   "engines": {
     "node": ">=8"
@@ -38,11 +38,12 @@
     "@babel/register": "^7.8.6",
     "autoprefixer": "^9.7.4",
     "babelify": "^10.0.0",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.14",
     "browserify": "^16.5.0",
     "core-js": "^3.6.4",
     "cross-env": "^7.0.1",
     "cssnano": "^4.1.10",
+    "dotenv": "^8.2.0",
     "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
     "eslint-plugin-import": "^2.20.1",

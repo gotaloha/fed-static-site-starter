@@ -1,7 +1,7 @@
 {
-  "title": "Gulp Starter Kit",
+  "title": "FED Static Site Starter",
   "description": "Gulp Starter Kit for front-end developer which supports: SCSS, Nunjucks, Babel + auto polyfill, Browserify & Browsersync.",
-  "author": "Son Tung Ngo",
+  "author": "Erik Olson",
   "lang": "en",
   "locale": "en_US",
   "url": "http://localhost:8080"
