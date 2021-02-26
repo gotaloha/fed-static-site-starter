@@ -11,12 +11,19 @@
   </head>
   <body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
 
-    <div class="page">
-      {% include "header.html" ignore missing %}
-      <div class="content">
+    <div id="content" class="page">
+      <header>
+        {% include "header.html" ignore missing %}
+      </header>
+      <main class="content">
         {{ content | safe }}
-      </div>
-      {% include "footer.html" ignore missing %}
+      </main>
+      <section>
+        sidebar
+      </section>
+      <footer>
+        {% include "footer.html" ignore missing %}
+      </footer>
     </div>
 
     <script src="/assets/js/app.js"></script>
