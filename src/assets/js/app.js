@@ -1,4 +1,4 @@
-;(function ($, window, document) {
+;(function ($, window) {
   // ########################################
   // # Define Functions
   // ########################################
