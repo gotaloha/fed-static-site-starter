@@ -13,10 +13,6 @@ body {
   width: 100vw;
 }
 
-.fonts-loaded body {
-  font-family: 'Open Sans', arial, helvetica, sans-serif;
-}
-
 .wrapper {
   align-items: center;
   display: flex;
@@ -25,8 +21,6 @@ body {
   justify-content: center;
   width: 100%;
 }
-
-@import "./grid-layout";
 
 .content {
   padding: $base;

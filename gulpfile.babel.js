@@ -45,6 +45,15 @@ function css () {
     .pipe(gulp.dest(`${PATHS.dist}/assets/css`))
 }
 
+function themeCss () {
+  return gulp.src('src/assets/scss/theme.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass({ includePaths: PATHS.sassLibs }).on('error', sass.logError))
+    .pipe(gulpif(PRODUCTION, postcss([autoprefixer(), cssnano()])))
+    .pipe(gulpif(!PRODUCTION, sourcemaps.write('.')))
+    .pipe(gulp.dest(`${PATHS.dist}/assets/css`))
+}
+
 // Stylelint for CSS & SCSS
 function stylelint (done) {
   return gulp.src('src/**/*.{css,scss}')
@@ -153,11 +162,11 @@ function watchFiles (done) {
 
 // Export tasks which can be used later with "gulp taskname"
 exports.default = gulp.series(
-  gulp.parallel(copyAssets, copyStaticFiles, images, css, js),
+  gulp.parallel(copyAssets, copyStaticFiles, images, css, themeCss, js),
   server, watchFiles
 )
 exports.build = gulp.series(
   eslint, stylelint,
-  gulp.parallel(copyAssets, copyStaticFiles, images, css, js),
+  gulp.parallel(copyAssets, copyStaticFiles, images, css, themeCss, js),
   cleanUnusedCSS, revFiles, compressAssets
 )

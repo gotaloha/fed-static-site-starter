@@ -2,9 +2,10 @@
 /*                               Main Stylesheet                              */
 /* -------------------------------------------------------------------------- */
 
-@import "./partials/fonts.scss";
 @import "./partials/variables.scss";
+@import "./partials/fonts.scss";
 @import "./partials/global.scss";
-@import "./partials/styleguide.scss";
+@import "./layout/grid.scss";
 @import "./partials/typography.scss";
+@import "./partials/styleguide.scss";
 @import "./components/hero-basic/styles.scss";
