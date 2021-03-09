@@ -14,5 +14,6 @@ module.exports = {
     'jQuery': 'readonly'
   },
   rules: {
+    'semi': [2, 'always']
   }
 }
