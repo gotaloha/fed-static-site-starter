@@ -4,10 +4,10 @@
   // # Define Functions
   // ########################################
 
-  function makeSwatches() {
-    $('.swatch').each(function() {
-      let name = $(this).data("name"),
-          color = $(this).data("hex");
+  function makeSwatches () {
+    $('.swatch').each(function () {
+      const name = $(this).data('name');
+      const color = $(this).data('hex');
 
       $(this).css('background-color', '#' + color);
       $(this).html(`<p>${name}<span>#${color}</span></p>`);
@@ -27,5 +27,4 @@
   // ########################################
 
   $(init);
-
-  })(window.jQuery, this);
+})(window.jQuery, this);

@@ -1,0 +1,56 @@
+/* -------------------------------------------------------------------------- */
+/*                                 Styleguide                                 */
+/* -------------------------------------------------------------------------- */
+
+.swatches {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $base;
+  justify-content: space-between;
+  width: 100%;
+
+  .swatch {
+    background: transparent;
+    border: 2px solid transparent;
+    flex: 1 0 100px;
+    height: 150px;
+    margin-bottom: $base;
+    position: relative;
+    transition: all .25s ease-in-out;
+    width: 100px;
+
+    &:before {
+      content: '';
+      height: 100px;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100px;
+    }
+
+    &:hover {
+      box-shadow: 0 5px 20px 0 rgba(37, 39, 41, .25);
+    }
+
+    p {
+      background: #f3f3f3;
+      bottom: 0;
+      font-size: 14px;
+      font-weight: 700;
+      left: 0;
+      line-height: 1.15;
+      margin: 0;
+      padding: $base/2;
+      position: absolute;
+      text-align: center;
+      width: calc(100% - #{$base});
+
+      span {
+        display: block;
+        font-size: 12px;
+        font-weight: 400;
+      }
+    }
+  }
+}

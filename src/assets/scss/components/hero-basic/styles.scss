@@ -1,4 +1,6 @@
-// Styles For Text Hero Component
+/* -------------------------------------------------------------------------- */
+/*                       Styles For Text Hero Component                       */
+/* -------------------------------------------------------------------------- */
 
 .component {
   &-hero {
@@ -12,7 +14,7 @@
         font-weight: 300;
         font-size: 45px;
         line-height: 45px;
-        margin: 0 0 15px;
+        margin: 0 0 $base;
         padding: 0;
       }
 
