@@ -1,18 +1,52 @@
+/* -------------------------------------------------------------------------- */
+/*                                Global Styles                               */
+/* -------------------------------------------------------------------------- */
+
 body {
-  width: 100vw;
-  height: 100vh;
+  background: #ffffff;
   color: #2E2C2F;
-  font-family: 'Lato', arial, helvetica, sans-serif;
+  font-family: sans-serif;
   font-size: 16px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.fonts-loaded body {
+  font-family: 'Open Sans', arial, helvetica, sans-serif;
 }
 
 .wrapper {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   height: 100%;
+  justify-content: center;
+  width: 100%;
 }
 
 @import "./grid-layout";
+
+.content {
+  padding: $base;
+}
+
+header {
+  background-color: $c-oyster;
+  height: $base*4;
+}
+
+footer {
+  background-color: $c-oyster;
+  height: $base*4;
+}
+
+.sidebar {
+  background-color: $c-oyster;
+  width: $sidebar;
+}
+
+q {
+  quotes: "“" "”";
+}

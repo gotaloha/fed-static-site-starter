@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap');
+/* -------------------------------------------------------------------------- */
+/*                               Main Stylesheet                              */
+/* -------------------------------------------------------------------------- */
 
+@import "./partials/fonts.scss";
+@import "./partials/variables.scss";
 @import "./partials/global.scss";
+@import "./partials/styleguide.scss";
+@import "./partials/typography.scss";
 @import "./components/hero-basic/styles.scss";
