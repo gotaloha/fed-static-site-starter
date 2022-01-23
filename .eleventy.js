@@ -28,6 +28,9 @@ module.exports = function(eleventyConfig) {
     return content
   })
 
+  eleventyConfig.addWatchTarget("./src/components/**/");
+  eleventyConfig.addWatchTarget("./src/components/**/**/");
+
   return {
     dir: {
       input: 'src',
