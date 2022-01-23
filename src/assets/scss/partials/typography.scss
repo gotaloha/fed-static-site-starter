@@ -1,0 +1,134 @@
+/* -------------------------------------------------------------------------- */
+/*                                 Typography                                 */
+/* -------------------------------------------------------------------------- */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1em;
+  margin-bottom: 1em;
+  margin-top: 0;
+  position: relative;
+
+  &::before {
+    font-size: 10px;
+    font-weight: 400;
+    left: -$base*2;
+    position: absolute;
+    top: calc(50% - $base/2);
+  }
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.typography {
+  align-items: stretch;
+  display: flex;
+  justify-content: flex-start;
+  margin: $base 0;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  .typeblock {
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    flex: 0 0 $base*10;
+    margin-right: $base*2;
+    padding: $base*2;
+    text-align: center;
+
+    @media (max-width: 580px) {
+      flex: 0 0 100%;
+      margin-right: 0;
+    }
+
+    .type {
+      border-bottom: 1px solid #dbdbdb;
+      font-size: $base*4;
+      font-weight: 700;
+    }
+
+    .typeface {
+      font-size: 14px;
+    }
+  }
+
+  .typelist {
+    flex: 1;
+    padding-left: $base*2;
+
+    @media (max-width: 767px) {
+      flex: 0 0 100%;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      line-height: 1.5;
+      position: relative;
+
+      &::before {
+        font-size: 10px;
+        font-weight: 400;
+        left: -$base*2;
+        position: absolute;
+        top: calc(50% - 7px);
+      }
+    }
+
+    h1 {
+      &::before { content: 'H1'; }
+    }
+
+    h2 {
+      &::before { content: 'H2'; }
+    }
+
+    h3 {
+      &::before { content: 'H3'; }
+    }
+
+    h4 {
+      &::before { content: 'H4'; }
+    }
+
+    h5 {
+      &::before { content: 'H5'; }
+    }
+  }
+}
+
+.list li::marker {
+  color: #6699cc;
+  font-size: 1.2em;
+}

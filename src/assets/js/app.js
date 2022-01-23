@@ -1,7 +1,7 @@
 ;(function ($, window) {
   var example = function () {
     console.log('Hello from app.js');
-  }
+  };
 
   var init = function () {
     example();

@@ -1,0 +1,63 @@
+/* -------------------------------------------------------------------------- */
+/*                              Spacing Variable                              */
+/* -------------------------------------------------------------------------- */
+
+$base: 16px;
+$sidebar: 200px;
+
+/* -------------------------------------------------------------------------- */
+/*                            Named Color Variables                           */
+/* -------------------------------------------------------------------------- */
+
+$c-willow: #94BC3D;
+$c-prussian: #4A5563;
+$c-pistachio: #D3C639;
+$c-mango: #F0A31F;
+$c-tiger: #EC6C23;
+$c-tiffany: #4DAEA8;
+$c-evening: #A3B5D1;
+$c-sultan: #35508D;
+$c-cloud: #F2EFEB;
+$c-oyster: #F2F1F1;
+$c-smoke: #D8D5D0;
+$c-ash: #CFC6BB;
+$c-storm: #A09882;
+$c-slate: #ABAFAA;
+
+.t-willow { color: $c-willow; }
+.bg-willow { background-color: $c-willow; }
+.t-prussian { color: $c-prussian; }
+.bg-prussian { background-color: $c-prussian; }
+.t-pistachio { color: $c-pistachio }
+.bg-pistachio { background-color: $c-pistachio }
+.t-mango { color: $c-mango }
+.bg-mango { background-color: $c-mango }
+.t-tiger { color: $c-tiger }
+.bg-tiger { background-color: $c-tiger }
+.t-tiffany { color: $c-tiffany }
+.bg-tiffany { background-color: $c-tiffany }
+.t-evening { color: $c-evening }
+.bg-evening { background-color: $c-evening }
+.t-sultan { color: $c-sultan }
+.bg-sultan { background-color: $c-sultan }
+.t-cloud { color: $c-cloud }
+.bg-cloud { background-color: $c-cloud }
+.t-oyster { color: $c-oyster }
+.bg-oyster { background-color: $c-oyster }
+.t-smoke { color: $c-smoke }
+.bg-smoke { background-color: $c-smoke }
+.t-ash { color: $c-ash }
+.bg-ash { background-color: $c-ash }
+.t-storm { color: $c-storm }
+.bg-storm { background-color: $c-storm }
+.t-slate { color: $c-slate }
+.bg-slate { background-color: $c-slate }
+
+
+/* -------------------------------------------------------------------------- */
+/*                           Global Color Variables                           */
+/* -------------------------------------------------------------------------- */
+
+$primary: $c-willow;
+
+$body-bg: #f00;
